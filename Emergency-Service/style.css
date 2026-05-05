@@ -1,0 +1,376 @@
+:root {
+    /* =========================================
+     🎨 RAW COLORS
+  ========================================= */
+    --green-600: #16a34a;
+    --green-700: #15803d;
+    --green-100: #dcfce7;
+
+    --gray-900: #111827;
+    --gray-700: #374151;
+    --gray-500: #6b7280;
+    --gray-200: #e5e7eb;
+    --gray-100: #f3f4f6;
+
+    --white: #ffffff;
+
+
+    /* =========================================
+     🧠 GLOBAL SEMANTIC COLORS
+  ========================================= */
+    --color-primary: var(--green-600);
+    --color-primary-hover: var(--green-700);
+    --color-primary-soft: var(--green-100);
+
+    --text-primary: var(--gray-900);
+    --text-secondary: var(--gray-500);
+    --text-muted: var(--gray-700);
+    --text-inverse: var(--white);
+
+    --bg-main: var(--gray-100);
+    --bg-surface: var(--white);
+    --bg-soft: var(--green-100);
+
+    --border-default: var(--gray-200);
+
+
+    /* =========================================
+     🔁 COMMON TOKENS
+  ========================================= */
+
+    /* 🔘 BUTTON */
+    --btn-bg: var(--color-primary);
+    --btn-bg-hover: var(--color-primary-hover);
+    --btn-text: var(--text-inverse);
+
+    /* 🏷 SECTION */
+    --section-bg: var(--bg-main);
+    --section-title-text: var(--text-primary);
+    --section-description-text: var(--text-secondary);
+
+    /* 🧾 CARD */
+    --card-bg: var(--bg-surface);
+    --card-text: var(--text-primary);
+    --card-border: var(--border-default);
+
+
+    /* =========================================
+     🔘 COMPONENT TOKENS
+  ========================================= */
+
+    /* 🔝 HEADER / NAVBAR */
+    --logo-text-color: var(--color-primary);
+    --nav-item-text: var(--text-primary);
+    --nav-item-hover: var(--color-primary);
+
+    /* 🟩 BANNER */
+    --banner-bg: linear-gradient(135deg,
+            var(--color-primary),
+            var(--color-primary-soft));
+    --banner-title-text: var(--text-inverse);
+    --banner-subtitle-text: var(--text-inverse);
+
+    /* 🚑 SERVICE CARD */
+    --service-card-bg: var(--card-bg);
+    --service-card-title: var(--text-primary);
+    --service-card-subtitle: var(--text-secondary);
+    --service-card-hotline: var(--color-primary);
+
+    --service-card-badge-bg: var(--color-primary);
+    --service-card-badge-text: var(--text-inverse);
+
+    /* 📞 CALL HISTORY */
+    --call-history-bg: var(--card-bg);
+    --call-history-title: var(--text-primary);
+    --call-history-text: var(--text-secondary);
+
+
+    /* =========================================
+     📏 SPACING SYSTEM
+  ========================================= */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+
+
+    /* =========================================
+     🔤 TYPOGRAPHY
+  ========================================= */
+    --font-family-base: 'Inter', sans-serif;
+
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-md: 16px;
+    --text-lg: 20px;
+    --text-xl: 24px;
+    --text-2xl: 32px;
+
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+
+    --line-height-base: 1.5;
+
+
+    /* =========================================
+     🔲 BORDER & RADIUS
+  ========================================= */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+
+    --border-width: 1px;
+
+
+    /* =========================================
+     🌫️ SHADOW
+  ========================================= */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+
+
+    /* =========================================
+     ⏱️ TRANSITION
+  ========================================= */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+
+
+    /* =========================================
+     📐 LAYOUT
+  ========================================= */
+    /* --container-width: 1200px;
+  --container-padding: 16px; */
+
+
+    /* =========================================
+     📱 Z-INDEX
+  ========================================= */
+    --z-header: 100;
+    --z-modal: 1000;
+    --z-tooltip: 1100;
+}
+
+
+
+
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+/* small device */
+
+/* header section start */
+#header{
+
+}
+#header .container{
+    padding: 7px 30px;
+}
+
+#header .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .row .web__logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#header .row .web__logo img{
+    width: 60px;
+}
+
+#header .row #header nav{
+
+}
+/* header section end */
+
+/* banner section start */
+#banner {
+    background-color: var(--green-700);
+}
+#banner .container{
+    padding: 20px 0px;
+}
+#banner .container .banner__content{
+    text-align: center;
+}
+
+#banner .container .banner__content img{
+    width: 90px;
+    height: 90px;
+}
+
+#banner .container .banner__content .banner__slogan .banner__title{
+    color: var(--banner-title-text);
+}
+#banner .container .banner__content .banner__slogan .banner__subtitile{
+    color: var(--banner-subtitle-text);
+    padding: var(--space-md);
+}
+/* banner section end */
+
+
+#help__sectore {
+    background-color: var(--section-bg);
+    padding: 30px 0px;
+}
+
+#help__sectore .container {
+    padding: 30px 27px;
+}
+
+
+#help__sectore .row .sectore__area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#help__sectore .row .sectore__area .service__card {
+    padding: 24px 20px;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    width: 100%;
+}
+
+#help__sectore .row .sectore__area .service__card .content {}
+
+#help__sectore .row .sectore__area .service__card .content .service__title {
+    font-size: var(--font-normal);
+    font-weight: var(--font-normal);
+    color: var(--service-card-title);
+    padding-top: 8px;
+}
+
+#help__sectore .row .sectore__area .service__card .content .service__description {
+    font-size: var(--text-xs);
+    color: var(--service-card-subtitle);
+}
+
+#help__sectore .row .sectore__area .service__card .content .hotLine_num {
+    color: var(--service-card-hotline);
+    font-size: var(--text-xl);
+}
+
+#help__sectore .row .sectore__area .service__card .content .service__name {
+    font-size: var(--text-xs);
+    background-color: var(--gray-700);
+    display: inline;
+    padding: 3px 7px;
+    border-radius: 20px;
+    color: var(--service-card-badge-text);
+}
+
+#help__sectore .row .sectore__area .service__card .content .service__button__area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--space-sm);
+}
+
+#help__sectore .row .sectore__area .service__card .content .service__button__area button {
+    border: 1px solid gray;
+    padding: 2px 18px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+}
+
+#help__sectore .row .sectore__area .service__card .content .service__button__area button:first-child {}
+
+#help__sectore .row .sectore__area .service__card .content .service__button__area button:last-child {
+    background-color: var(--btn-bg);
+    color: white;
+}
+
+#help__sectore .row .sectore__area .service__card .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#help__sectore .row .sectore__area .service__card .heading img {
+    width: 20px;
+}
+
+#help__sectore .row .sectore__area .service__card .heading img:last-child{
+
+}
+
+#help__sectore .row .call__history__area {
+    background-color: var(--call-history-bg);
+    display: none;
+}
+
+@media screen and (min-width:600px) {
+    #help__sectore .row .sectore__area {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    #help__sectore .row .sectore__area .service__card {
+        width: calc(50% - 5px);
+    }
+}
+
+@media screen and (min-width:767px) {
+    #help__sectore .container {
+        padding: 30px 20px;
+    }
+
+    #help__sectore .row .sectore__area {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    #help__sectore .row .sectore__area .service__card {
+        width: calc(33% - 5px);
+    }
+
+
+
+}
+
+@media screen and (min-width: 1100px) {
+    #help__sectore .container {
+        padding: 30px 90px;
+    }
+
+    #help__sectore .row {
+        display: flex;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #help__sectore .row .sectore__area {
+        width: 85%;
+    }
+
+    #help__sectore .row .call__history__area {
+        display: block;
+        width: 25%;
+    }
+
+}
