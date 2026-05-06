@@ -11,6 +11,7 @@
     --gray-500: #6b7280;
     --gray-200: #e5e7eb;
     --gray-100: #f3f4f6;
+    --gray-50: #BEBEBE;
 
     --white: #ffffff;
 
@@ -62,6 +63,9 @@
     --logo-text-color: var(--color-primary);
     --nav-item-text: var(--text-primary);
     --nav-item-hover: var(--color-primary);
+    --nav-heart-bg: var(--green-100);
+    --nav-points-bg: var(--green-100);
+    --nav-copy-bg: var(--green-700);
 
     /* 🟩 BANNER */
     --banner-bg: linear-gradient(135deg,
@@ -74,15 +78,17 @@
     --service-card-bg: var(--card-bg);
     --service-card-title: var(--text-primary);
     --service-card-subtitle: var(--text-secondary);
-    --service-card-hotline: var(--color-primary);
+    --service-card-hotline: var(--gray-500);
 
-    --service-card-badge-bg: var(--color-primary);
-    --service-card-badge-text: var(--text-inverse);
+    --service-card-badge-bg: var(--gray-50);
+    --service-card-badge-text: var(--gray-800);
 
     /* 📞 CALL HISTORY */
     --call-history-bg: var(--card-bg);
     --call-history-title: var(--text-primary);
     --call-history-text: var(--text-secondary);
+    --call_history_toggle_btn_bg: var(--gray-50);
+    --call_history_toggle_btn_text: var(--green-600);
 
 
     /* =========================================
@@ -175,67 +181,141 @@
 /* small device */
 
 /* header section start */
-#header{
+#header {}
 
-}
-#header .container{
+#header .container {
     padding: 7px 30px;
 }
 
-#header .row{
+#header .row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-#header .row .web__logo{
+#header .row .web__logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-#header .row .web__logo img{
-    width: 60px;
+
+#header .row .web__logo img {
+    width: 40px;
 }
 
-#header .row #header nav{
+#header .row .web__logo .web__logo__titlle {
+    font-size: var(--text-sm);
+    color: var(--logo-text-color);
+}
+
+#header .row nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#header .row nav div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--nav-heart-bg);
+    padding: 3px 10px;
+    border-radius: 30px;
+    font-size: var(--text-xs);
+}
+
+#header .row nav .heart {}
+
+#header .row nav .points {}
+
+#header .row nav .copy {
+    background-color: var(--nav-copy-bg);
+    color: white;
 
 }
+
+#header .row nav div img {
+    width: 20px;
+}
+
+#header .row nav div p {
+    font-size: var(--text-sm);
+}
+
 /* header section end */
 
 /* banner section start */
 #banner {
     background-color: var(--green-700);
 }
-#banner .container{
+
+#banner .container {
     padding: 20px 0px;
 }
-#banner .container .banner__content{
+
+#banner .container .banner__content {
     text-align: center;
 }
 
-#banner .container .banner__content img{
-    width: 90px;
-    height: 90px;
+#banner .container .banner__content img {
+    width: 50px;
+    height: 50px;
 }
 
-#banner .container .banner__content .banner__slogan .banner__title{
+#banner .container .banner__content .banner__slogan .banner__title {
     color: var(--banner-title-text);
+    font-size: var(--text-lg);
 }
-#banner .container .banner__content .banner__slogan .banner__subtitile{
+
+#banner .container .banner__content .banner__slogan .banner__subtitile {
     color: var(--banner-subtitle-text);
-    padding: var(--space-md);
+    padding: var(--space-sm);
+    font-size: var(--text-xs);
 }
+
+
+
+#working_notice {
+  width: 100%;
+  overflow: hidden;
+  background: #fff3cd;
+  font-size: 20px;
+}
+
+#working_notice span {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* banner section end */
 
 
 #help__sectore {
     background-color: var(--section-bg);
-    padding: 30px 0px;
+    padding: 60px 0px;
+    position: relative;
+    overflow: hidden;
 }
 
 #help__sectore .container {
     padding: 30px 27px;
 }
 
+
+#help__sectore .row {
+    z-index: -999;
+}
 
 #help__sectore .row .sectore__area {
     display: flex;
@@ -271,7 +351,7 @@
 
 #help__sectore .row .sectore__area .service__card .content .service__name {
     font-size: var(--text-xs);
-    background-color: var(--gray-700);
+    background-color: var(--service-card-badge-bg);
     display: inline;
     padding: 3px 7px;
     border-radius: 20px;
@@ -311,14 +391,86 @@
     width: 20px;
 }
 
-#help__sectore .row .sectore__area .service__card .heading img:last-child{
+#help__sectore .row .sectore__area .service__card .heading img:last-child {}
 
+
+/* #help__sectore .row .call_history_large_device_style {
+    display: none;
+ } */
+
+
+#help__sectore .row .call__history__area {
+    position: absolute;
+    width: 270px;
+    height: 450px;
+    background-color: var(--call-history-bg);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    top: 0px;
+    left: -9999px;
+    border: 2px solid gray;
+    transition: all .3s;
 }
 
 #help__sectore .row .call__history__area {
+    position: absolute;
+    width: 270px;
+    height: 450px;
     background-color: var(--call-history-bg);
-    display: none;
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    top: 0;
+    left: 0;
+
+    transform: translateX(-120%); /* hidden */
+    opacity: 0;
+
+    transition: transform .3s ease, opacity .3s ease;
 }
+
+#help__sectore .row .call__history__area.show{
+    transform: translateX(0%); /* hidden */
+    opacity: 1;
+}
+
+#help__sectore .row .call__history__area .heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+#help__sectore .row .call__history__area .heading h2 {
+    font-size: var(--text-md);
+}
+
+#help__sectore .row .call__history__area .heading button {
+    padding: 3px 10px;
+    border: none;
+    outline: none;
+    background-color: var(--btn-bg);
+    color: white;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+}
+
+#help__sectore .call_history_toggle_btn {}
+
+#help__sectore .call_history_toggle_btn i {
+    position: absolute;
+    left: 80%;
+    font-size: var(--text-lg);
+    top: 16px;
+    padding: 16px;
+    color: var(--green-600);
+    cursor: pointer;
+    border: 2px solid var(--green-600);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 @media screen and (min-width:600px) {
     #help__sectore .row .sectore__area {
@@ -341,7 +493,7 @@
     #help__sectore .row .sectore__area {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         gap: 5px;
     }
 
@@ -355,7 +507,7 @@
 
 @media screen and (min-width: 1100px) {
     #help__sectore .container {
-        padding: 30px 90px;
+        padding: 10px 90px;
     }
 
     #help__sectore .row {
@@ -369,8 +521,17 @@
     }
 
     #help__sectore .row .call__history__area {
-        display: block;
         width: 25%;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+        transform: translateX(0%); /* hidden */
+    }
+
+
+    #help__sectore .call_history_toggle_btn {
+        display: none;
     }
 
 }
