@@ -1,0 +1,344 @@
+:root {
+
+
+    /* Color Palette */
+    --green-800: #00A63E;
+    --green-700: #00C950;
+    --gray-900: #111827;
+    --gray-500: #6B7280;
+    --white: #FFFFFF;
+
+    --primary-color: #00A63E;
+    --secondary-color: #2563EB;
+    --accent-color: #8B5CF6;
+
+    --success-color: #22C55E;
+    --danger-color: #EF4444;
+    --warning-color: #F59E0B;
+    --info-color: #0EA5E9;
+
+    --bg-color: #F8FAFC;
+    --bg-dark: #0F172A;
+    --surface-color: #FFFFFF;
+    --card-color: #FFFFFF;
+
+
+    --text-color: #111827;
+    --text-light: #6B7280;
+    --text-muted: #9CA3AF;
+    --text-white: #FFFFFF;
+
+
+
+    --border-color: #E5E7EB;
+    --border-light: #F1F5F9;
+    --border-dark: #CBD5E1;
+
+
+    --shadow-color: rgba(0, 0, 0, 0.1);
+
+
+    --overlay-color: rgba(0, 0, 0, 0.5);
+
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 18px;
+
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+
+    /* =========================
+       Typography
+    ========================== */
+
+    --font-family: "Inter", sans-serif;
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-md: 18px;
+    --font-size-lg: 20px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 30px;
+    --font-size-3xl: 36px;
+
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* =========================
+       Spacing (Margin / Padding)
+    ========================== */
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+
+    /* =========================
+       Radius
+    ========================== */
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-full: 999px;
+
+    /* =========================
+       Border
+    ========================== */
+
+    --border-width: 1px;
+    --border-width-2: 2px;
+
+    /* =========================
+       Shadow
+    ========================== */
+
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+    /* =========================
+       Transition
+    ========================== */
+
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* =========================
+       Layout / Container
+    ========================== */
+
+    --container-sm: 640px;
+    --container-md: 768px;
+    --container-lg: 1024px;
+    --container-xl: 1280px;
+
+    --grid-gap: 16px;
+
+    /* =========================
+       Z-Index
+    ========================== */
+
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-modal: 1050;
+    --z-toast: 1100;
+
+    /* =========================
+       Breakpoints
+    ========================== */
+
+    --mobile: 480px;
+    --tablet: 768px;
+    --laptop: 1024px;
+    --desktop: 1280px;
+
+    /* =========================
+       UI Behavior
+    ========================== */
+
+    --hover-scale: 1.02;
+    --active-scale: 0.98;
+
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+#header {}
+
+#header .container {
+    padding: 0px 30px;
+}
+
+#header .container .row {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .web_logo {}
+
+#header .web_logo h3 {
+    font-size: 26px;
+}
+
+#header .web_logo h3 span {
+    color: var(--primary-color);
+}
+
+#header .nav_items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+#header .nav_items .cart_length {
+    position: absolute;
+    left: 37%;
+    top: 6px;
+    background-color: var(--primary-color);
+    width: 10px;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#header .nav_items #header .nav_items i {
+    font-size: 14px;
+}
+
+#header .nav_items i:nth-child(3) {
+    cursor: pointer;
+}
+
+#header .nav_items i:nth-child(4) {
+    cursor: pointer;
+    padding: 9px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header .nav_items i:nth-child(5) {
+    cursor: pointer;
+}
+
+#header .menu_list {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateX(-190px);
+    opacity: 0;
+    pointer-events: none;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#header .menu_list li {
+    list-style-type: none;
+    transition: all .4s;
+}
+
+#header .menu_list li {
+    border-radius: 5px;
+    padding: 4px;
+}
+
+#header .menu_list li:hover {
+    background-color: var(--bg-color);
+}
+
+#header .menu_list li:hover a {
+    color: var(--primary-color);
+}
+
+#header .menu_list li a {
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    color: var(--text-color);
+    transition: all 0.2s ease;
+    opacity: .8;
+}
+
+#header .menu_list.show {
+    width: 190px;
+    height: 300px;
+    background-color: var(--bg-color);
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    left: 0px;
+    opacity: 1;
+    transform: translateX(0px);
+    pointer-events: auto;
+}
+
+#header .menu_list.show i {
+    position: absolute;
+    right: 6px;
+    top: 10px;
+    cursor: pointer;
+    background-color: var(--border-light);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Mobile (default) */
+@media (min-width: 460px) {
+    #header .container {
+        padding: 0px 50px;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 768px) {
+    #header .container {
+        padding: 0px 70px;
+    }
+
+    /* #header .row {
+        display: flex;
+    } */
+
+    #header .menu_list {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        transition: all .3s ease;
+        opacity: 1;
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+        transform: translateX(0px);
+    }
+
+    #header .nav_items .toggleOpenBtn {
+        display: none;
+    }
+
+    #header .menu_list i {
+        display: none;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+    #header .container {
+        padding: 0px 130px;
+    }
+}
