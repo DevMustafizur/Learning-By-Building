@@ -1,0 +1,156 @@
+/* extra small device- max-575 - most importent*/
+
+#header {}
+
+#header .row {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .row .web_logo {}
+
+#header .row .web_logo .brand_name {
+    font-size: 26px;
+}
+
+#header .web_logo .brand_name span {
+    color: var(--primary-color);
+}
+
+#header .row .nav_items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+#header .row .nav_items .cart_length {
+    position: absolute;
+    left: 37%;
+    top: -3px;
+    background-color: var(--primary-color);
+    width: 10px;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#header .row .nav_items i {
+    font-size: 14px;
+}
+
+#header .row .nav_items .fa-magnifying-glass {}
+
+
+#header .row .nav_items .fa-opencart {
+    cursor: pointer;
+}
+
+#header .row .nav_items .fa-user-tie {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+#header .row .nav_items .menu_open_btn {
+    cursor: pointer;
+}
+
+
+
+
+#header .menu_list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-290px);
+    opacity: 0;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+}
+
+#header .menu_list.show {
+    width: 190px;
+    height: 300px;
+    background-color: var(--bg-color);
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    left: 0px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+#header .menu_list li {
+    list-style-type: none;
+    transition: all .4s;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+#header .menu_list li:hover {
+    background-color: var(--bg-color);
+}
+
+#header .menu_list li:hover a {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+#header .menu_list li a {
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    color: var(--text-color);
+    transition: all 0.2s ease;
+    opacity: .8;
+}
+
+
+
+#header .menu_list.show i {
+    position: absolute;
+    right: 6px;
+    top: 10px;
+    cursor: pointer;
+    background-color: var(--border-light);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* small mobile - importent */
+@media (min-width: 576px) {}
+
+/* large device- laptop - need */
+@media (min-width: 992px) {
+    #header .row .menu_list {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+        transform: translateX(0px);
+        gap: 30px;
+    }
+    #header .row .nav_items .cart_length{
+        left: 54%;
+    }
+
+    #header .row .menu_list .menu_close_btn {
+        display: none;
+    }
+
+    #header .row .nav_items .menu_open_btn {
+        display: none;
+    }
+}

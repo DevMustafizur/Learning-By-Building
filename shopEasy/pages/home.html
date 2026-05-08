@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- css file link start-->
+     <link rel="stylesheet" href="../css/layout.css">
+     <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="../css/pages/home.css">
+    <!-- css file link end-->
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -16,7 +21,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
@@ -25,10 +29,10 @@
         <div class="container">
             <div class="row">
                 <div class="web_logo">
-                    <h3>Shop <span>Easy</span></h3>
+                    <h3 class="brand_name">Shop<span>Easy</span></h3>
                 </div>
                 <ul class="menu_list">
-                    <i class="fa-solid fa-x toggleCloseBtn"></i>
+                    <i class="fa-solid fa-x menu_close_btn"></i>
                     <li><a href="./home.html">Home</a></li>
                     <li><a href="./shop.html">Shop</a></li>
                     <li><a href="./contact.html">Contact</a></li>
@@ -38,14 +42,14 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-brands fa-opencart"></i>
                     <i class="fa-solid fa-user-tie"></i>
-                    <i class="fa-solid fa-bars toggleOpenBtn"></i>
+                    <i class="fa-solid fa-bars menu_open_btn"></i>
                 </div>
             </div>
         </div>
     </header>
     <!-- header section end -->
+
     <main id="main">
-        <!-- banner section start -->
         <section id="banner">
             <div class="container">
                 <div class="row">
@@ -57,42 +61,38 @@
                         <button>Explore Now</button>
                     </div>
                     <div class="banner_image">
-                        <img src="./assets/banner.png" alt="">
+                        <img src="../assets/banner.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <!-- banner section end -->
 
-        <!-- collection section start -->
         <section id="collections">
             <div class="container">
                 <div class="row">
                     <div class="collection_item">
-                        <img src="./assets/category1.jpeg" alt="">
+                        <img src="../assets/category1.jpeg" alt="">
                         <h4 class="category_title">Velvet Vogue</h4>
                     </div>
                     <div class="collection_item">
-                        <img src="./assets/category2.jpeg" alt="">
+                        <img src="../assets/category2.jpeg" alt="">
                         <h4 class="category_title">Opal Muse</h4>
 
                     </div>
                     <div class="collection_item">
-                        <img src="./assets/category3.jpeg" alt="">
+                        <img src="../assets/category3.jpeg" alt="">
                         <h4 class="category_title">Éclat Femme</h4>
 
                     </div>
                     <div class="collection_item">
-                        <img src="./assets/category4.jpeg" alt="">
+                        <img src="../assets/category4.jpeg" alt="">
                         <h4 class="category_title">Maison Elle</h4>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- collection section end -->
     </main>
-
-    <script src="./script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

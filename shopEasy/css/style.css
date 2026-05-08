@@ -1,0 +1,192 @@
+:root {
+
+
+   /* Color Palette */
+   /* --green-800: #00A63E;
+    --green-700: #00C950;
+    --gray-900: #111827;
+    --gray-500: #6B7280;
+    --white: #FFFFFF; */
+
+   --primary-color: #CF6DFC;
+   --secondary-color: #C1BFFF;
+   --accent-color: #BDB96A;
+
+   --success-color: #22C55E;
+   --danger-color: #EF4444;
+   --warning-color: #F59E0B;
+   --info-color: #0EA5E9;
+   --bg-section-color: #FDFBD4;
+   --bg-color: #F8FAFC;
+   --bg-dark: #0F172A;
+   --surface-color: #FFFFFF;
+   --card-color: #FFFFFF;
+
+
+   --text-color: #111827;
+   --text-light: #6B7280;
+   --text-muted: #9CA3AF;
+   --text-white: #FFFFFF;
+
+
+
+   --border-color: #E5E7EB;
+   --border-light: #F1F5F9;
+   --border-dark: #CBD5E1;
+
+
+   --shadow-color: rgba(0, 0, 0, 0.1);
+
+
+   --overlay-color: rgba(0, 0, 0, 0.5);
+
+
+   --radius-sm: 6px;
+   --radius-md: 10px;
+   --radius-lg: 18px;
+
+
+   --transition-fast: 0.2s ease;
+   --transition-normal: 0.3s ease;
+   --transition-slow: 0.5s ease;
+
+
+   /* =========================
+       Typography
+    ========================== */
+
+   --font-family: "Inter", sans-serif;
+
+   --font-size-xs: 12px;
+   --font-size-sm: 14px;
+   --font-size-base: 16px;
+   --font-size-md: 18px;
+   --font-size-lg: 20px;
+   --font-size-xl: 24px;
+   --font-size-2xl: 30px;
+   --font-size-3xl: 36px;
+
+   --font-weight-light: 300;
+   --font-weight-regular: 400;
+   --font-weight-medium: 500;
+   --font-weight-bold: 700;
+
+   /* =========================
+       Spacing (Margin / Padding)
+    ========================== */
+
+   --space-1: 4px;
+   --space-2: 8px;
+   --space-3: 12px;
+   --space-4: 16px;
+   --space-5: 20px;
+   --space-6: 24px;
+   --space-8: 32px;
+   --space-10: 40px;
+   --space-12: 48px;
+   --space-16: 64px;
+
+   /* =========================
+       Radius
+    ========================== */
+
+   --radius-sm: 6px;
+   --radius-md: 10px;
+   --radius-lg: 16px;
+   --radius-xl: 24px;
+   --radius-full: 999px;
+
+   /* =========================
+       Border
+    ========================== */
+
+   --border-width: 1px;
+   --border-width-2: 2px;
+
+   /* =========================
+       Shadow
+    ========================== */
+
+   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+   --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.15);
+   --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+   /* =========================
+       Transition
+    ========================== */
+
+   --transition-fast: 0.15s ease;
+   --transition-normal: 0.3s ease;
+   --transition-slow: 0.5s ease;
+
+   /* =========================
+       Layout / Container
+    ========================== */
+
+   --container-sm: 640px;
+   --container-md: 768px;
+   --container-lg: 1024px;
+   --container-xl: 1280px;
+
+   --grid-gap: 16px;
+
+   /* =========================
+       Z-Index
+    ========================== */
+
+   --z-dropdown: 1000;
+   --z-sticky: 1020;
+   --z-modal: 1050;
+   --z-toast: 1100;
+
+   /* =========================
+       Breakpoints
+    ========================== */
+
+   --mobile: 480px;
+   --tablet: 768px;
+   --laptop: 1024px;
+   --desktop: 1280px;
+
+   /* =========================
+       UI Behavior
+    ========================== */
+
+   --hover-scale: 1.02;
+   --active-scale: 0.98;
+
+
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
+
+/* common style */
+
+/* extra small device - most importent */
+.container {
+   padding: 0px 20px;
+}
+
+/* from 576 - 767 */
+/* small device - smart phone - importent */
+@media screen and (min-width: 576px) {
+   .container {
+      padding: 0px 40px;
+   }
+}
+
+/* 768 - 991 (tablet -avoid) */
+
+/* from 992 - 1199 - laptop need */
+@media screen and (min-width: 992px) {
+   .container {
+      padding: 0px 70px;
+   }
+}
+
+
