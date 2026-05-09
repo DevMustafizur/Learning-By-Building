@@ -119,10 +119,41 @@ function SINGLEPRODUCTPAGE() {
         console.log(product)
         singleProduct.innerHTML = `
                 <div class="product">
-                    <p>${product.title}</p>
-                    <p>${product.category}</p>
-                    <p>${product.discountPrice}</p>
-                    <p><del>${product.price}<del></p>
+                    <img src=${product.image} alt="">
+                    <div class="product_details">
+                        <h5 class="product_title">${product.title}</h5>
+                        <div class="product_ratings">
+                            <div class="rating_icons"></div>
+                            <span class="rating_point">
+                            ${product.rating}</span>
+                        </div>
+                        <div class="product_description">
+                         ${product.description}
+                        </div>
+                        <div class="product_price">
+                            <p class="offer_price">$${product.discountPrice}</p>
+                            <p class="old_price"><del>$${product.price}</del></p>
+                        </div>
+                        <hr>
+                        <div class="product_hot_details">
+                            <div class="item">
+                                <p class="property_name">Category</p>
+                                <span class="property_value">${product.category}</span>
+                            </div>
+                            <div class="item">
+                                <p class="property_name">Condition</p>
+                                <span class="property_value">${product.condition}</span>
+                            </div>
+                            <div class="item">
+                                <p class="property_name">Stock</p>
+                                <span class="property_value">${product.stock}</span>
+                            </div>
+                        </div>
+                        <div class="btn_group">
+                            <button class="add_to_cart_btn">Add to Cart</button>
+                            <button class="buy_now_btn">Buy Now</button>
+                        </div>
+                    </div>
                 </div>
     `
     }
