@@ -13,7 +13,7 @@ export const DATABASE = {
                 discountPrice: 999,
                 size: ["S", "M", "L"],
                 condition: "New",
-                image: "./assets/products/p1.png",
+                image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
                 rating: 4.5,
                 stock: 12
             },
@@ -26,7 +26,7 @@ export const DATABASE = {
                 discountPrice: 2100,
                 size: [40, 41, 42],
                 condition: "New",
-                image: "./assets/products/p2.png",
+                image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
                 rating: 4.8,
                 stock: 8
             },
@@ -39,7 +39,7 @@ export const DATABASE = {
                 discountPrice: 1500,
                 size: ["M", "L"],
                 condition: "Sale",
-                image: "./assets/products/p3.png",
+                image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7",
                 rating: 4.2,
                 stock: 5
             },
@@ -52,7 +52,7 @@ export const DATABASE = {
                 discountPrice: 1199,
                 size: ["M", "L", "XL"],
                 condition: "New",
-                image: "./assets/products/p4.png",
+                image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf",
                 rating: 4.1,
                 stock: 10
             },
@@ -65,7 +65,7 @@ export const DATABASE = {
                 discountPrice: 2800,
                 size: ["S", "M"],
                 condition: "Sale",
-                image: "./assets/products/p5.png",
+                image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246",
                 rating: 4.7,
                 stock: 6
             },
@@ -78,7 +78,7 @@ export const DATABASE = {
                 discountPrice: 3599,
                 size: [39, 40, 41, 42],
                 condition: "New",
-                image: "./assets/products/p6.png",
+                image: "https://images.unsplash.com/photo-1543508282-6319a3e2621f",
                 rating: 4.9,
                 stock: 9
             },
@@ -91,7 +91,7 @@ export const DATABASE = {
                 discountPrice: 1999,
                 size: ["Free"],
                 condition: "New",
-                image: "./assets/products/p7.png",
+                image: "https://images.unsplash.com/photo-1610030469668-2f5d5c6c43d5",
                 rating: 4.4,
                 stock: 7
             },
@@ -104,7 +104,7 @@ export const DATABASE = {
                 discountPrice: 699,
                 size: ["XS", "S"],
                 condition: "Sale",
-                image: "./assets/products/p8.png",
+                image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f",
                 rating: 4.0,
                 stock: 15
             },
@@ -117,7 +117,7 @@ export const DATABASE = {
                 discountPrice: 799,
                 size: ["Free"],
                 condition: "New",
-                image: "./assets/products/p9.png",
+                image: "https://images.unsplash.com/photo-1624222247344-550fb60583dc",
                 rating: 4.3,
                 stock: 20
             },
@@ -130,7 +130,7 @@ export const DATABASE = {
                 discountPrice: 2399,
                 size: ["Free"],
                 condition: "New",
-                image: "./assets/products/p10.png",
+                image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3",
                 rating: 4.6,
                 stock: 11
             },
@@ -143,7 +143,7 @@ export const DATABASE = {
                 discountPrice: 1699,
                 size: ["M", "L", "XL"],
                 condition: "Sale",
-                image: "./assets/products/p11.png",
+                image: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a",
                 rating: 4.2,
                 stock: 13
             },
@@ -156,7 +156,7 @@ export const DATABASE = {
                 discountPrice: 2299,
                 size: ["S", "M", "L"],
                 condition: "New",
-                image: "./assets/products/p12.png",
+                image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
                 rating: 4.8,
                 stock: 4
             }

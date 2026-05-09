@@ -70,14 +70,14 @@
     opacity: 1;
 }
 
-#shop .row .products_area .filters_open_btn.hide{
+#shop .row .products_area .filters_open_btn.hide {
     display: none;
     opacity: 0;
 }
 
 #shop .row .filters_sidebar .filters_close_btn {
     position: absolute;
-    left:10px;
+    left: 10px;
     top: 0px;
     cursor: pointer;
     background-color: var(--bg-color);
@@ -134,9 +134,11 @@
 #shop .row .products_area {
     width: 100%;
 }
-#shop .row .products_area .products_title{
+
+#shop .row .products_area .products_title {
     padding: 10px 0px;
 }
+
 #shop .row .products_area .products_grid {
     display: flex;
     flex-direction: column;
@@ -146,16 +148,45 @@
 
 #shop .row .products_area .products_grid .product_card {
     width: 100%;
-    height: 120px;
     background-color: var(--bg-section-color);
     max-width: 380px;
 }
-#shop .row .products_area .products_grid .product_card .product_image{
-    width: 100%;
-}
-#shop .row .products_area .products_grid .product_card .product_image img{
+
+#shop .row .products_area .products_grid .product_card .product_image {
     width: 100%;
     height: 200px;
+    cursor: pointer;
+}
+
+#shop .row .products_area .products_grid .product_card .product_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#shop .row .products_area .products_grid .product_card .product_details {
+    padding: 10px;
+}
+
+#shop .row .products_area .products_grid .product_card .product_details .product_title {
+    font-size: 19px;
+}
+
+#shop .row .products_area .products_grid .product_card .product_details .product_ratings {}
+
+#shop .row .products_area .products_grid .product_card .product_details .product_price {
+    display: flex;
+    gap: 15px;
+}
+
+#shop .row .products_area .products_grid .product_card .product_details .product_price .product_offer_price {}
+
+#shop .row .products_area .products_grid .product_card .product_details .product_price .product_offer_price .product_offer_price_length {}
+
+#shop .row .products_area .products_grid .product_card .product_details .product_price .product_old_price {}
+
+#shop .row .products_area .products_grid .product_card .product_details .product_price .product_old_price .product_old_price_length{
+    color: red;
 }
 
 /* shop section end */
@@ -185,7 +216,6 @@
 
     #shop .row .products_area .products_grid .product_card {
         width: calc(50% - 5px);
-        height: 120px;
         background-color: var(--bg-section-color);
     }
 
@@ -219,15 +249,16 @@
         column-gap: 10px;
     }
 
-    #shop .row .products_area{
+    #shop .row .products_area {
         width: 75%;
     }
-     #shop .row .products_area .products_grid .product_card {
+
+    #shop .row .products_area .products_grid .product_card {
         width: calc(33% - 5px);
-        height: 120px;
         background-color: var(--bg-section-color);
     }
-    #shop .row .products_area .filters_open_btn{
+
+    #shop .row .products_area .filters_open_btn {
         display: none;
     }
 
@@ -241,7 +272,8 @@
         opacity: 1;
         width: 25%;
     }
-    #shop .row .filters_sidebar .filters_close_btn{
+
+    #shop .row .filters_sidebar .filters_close_btn {
         display: none;
     }
 

@@ -1,0 +1,24 @@
+#single_product_banner{
+
+}
+#single_product_banner .single_product_banner_content{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    background-color: var(--bg-section-color);
+}
+#single_product_banner .single_product_banner_content .banner_title{
+    
+}
+
+#single_product_banner .single_product_banner_content .banner_pathName{
+    display: flex;
+    gap: 10px;
+    opacity: .8;
+    align-items: center;
+}
+#single_product_banner .single_product_banner_content .banner_pathName p{
+    font-size: 12px;
+}
