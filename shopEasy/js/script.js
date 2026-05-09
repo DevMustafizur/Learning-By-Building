@@ -116,21 +116,18 @@ function SINGLEPRODUCTPAGE() {
 
     function displayedProduct() {
         const product = getProductFromUrl();
+        console.log(product)
         singleProduct.innerHTML = `
-    <div>
-       <p class="product_type">New</p>
-       <p class="product_category">${product.category}</p>
-       <h4 class="product_title">${product.title}</h4>
-       <div class="product_reviews_grid">
-          <div class="product_review_star"></div>
-          <div class="product_review_display">
-             <p class="product_review_char"><span class="product_review_length">4</span>Reviews</p>
-          </div>
-        </div>
-    </div>
+                <div class="product">
+                    <p>${product.title}</p>
+                    <p>${product.category}</p>
+                    <p>${product.discountPrice}</p>
+                    <p><del>${product.price}<del></p>
+                </div>
     `
-        displayedProduct()
     }
+    displayedProduct()
+
 
     function showDynamicProductNameInBanner() {
         const product = getProductFromUrl();
