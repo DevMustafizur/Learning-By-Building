@@ -65,8 +65,10 @@ function SHOPPAGE() {
     function productsDisplayed() {
         window.sentDataSingleProductPage = sentDataSingleProductPage;
 
-        products_grid.innerHTML = DATABASE.shop.products.map((product) => {
-            return `
+        products_grid.innerHTML = "Loading..."
+        setTimeout(() => {
+            products_grid.innerHTML = DATABASE.shop.products.map((product) => {
+                return `
                                     <div class="product_card">
                                 <div class="product_image">
                                 <img 
@@ -86,8 +88,8 @@ function SHOPPAGE() {
                                 </div>
                             </div>
         `
-        }).join("")
-
+            }).join("")
+        }, 0);
         function sentDataSingleProductPage(product) {
             const productStringify = JSON.stringify(product);
             const urlEncoded = encodeURIComponent(productStringify)
@@ -170,7 +172,7 @@ function SINGLEPRODUCTPAGE() {
         event.addEventListener("click", () => {
             if (page == "home") {
                 console.log('done')
-                window.location.pathname = "shopEasy/pages/home.html"
+                window.location.pathname = "shopEasy/home.html"
             } else if (page == "shop") {
                 window.location.pathname = 'shopEasy/pages/shop.html'
             }

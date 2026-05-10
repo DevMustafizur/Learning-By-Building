@@ -48,7 +48,7 @@
 }
 
 #single_product .product .product_details .product_description {
-    font-size: 20px;
+    font-size: 15px;
     opacity: .9;
     padding: 10px 0px;
 }
@@ -61,7 +61,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #single_product .product .product_details .product_price .offer_price {
@@ -78,7 +78,8 @@
     display: flex;
     gap: 30px;
     justify-content: space-between;
-    width: 200px;
+    max-width: 200px;
+    font-size: 10px;
 }
 
 #single_product .product .product_details .btn_group {
@@ -88,10 +89,11 @@
 }
 
 #single_product .product .product_details .btn_group button {
-    padding: 2px 32px;
+    padding: 2px 22px;
     border: none;
     outline: none;
     cursor: pointer;
+    font-size: 13px;
 }
 
 #single_product .product .product_details .btn_group .buy_now_btn {
@@ -99,18 +101,60 @@
     color: white;
 }
 
+
+/* cart section start */
+body{
+    position: relative;
+}
+#cart{
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: red;
+    width: 500px;
+    height: 100%;
+    z-index: 9999;
+}
+#cart .grid{
+
+}
+#cart .grid .cart_area{
+    
+}
+/* cart section end */
+
 /* from 576 - 767 */
 /* small device - smart phone - importent */
 @media screen and (min-width: 576px) {
     #single_product .product {
-        display: flex;
-        gap: 70px;
+        /* display: flex; */
+        gap: 40px;
         justify-content: space-between;
     }
-    #single_product .product img{
-        width: 350px;
+
+    #single_product .product img {
+        max-width: 350px;
     }
-    #single_product .product_details{
-        width:80%;
+
+    #single_product .product_details {
+        width: 80%;
+    }
+}
+
+/* large device */
+@media screen and (min-width: 992px) {
+    #single_product .product {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    #single_product .product img {
+        max-width: 350px;
+    }
+
+    #single_product .product_details {
+        width: 40%;
     }
 }
