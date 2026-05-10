@@ -172,7 +172,7 @@ function SINGLEPRODUCTPAGE() {
         event.addEventListener("click", () => {
             if (page == "home") {
                 console.log('done')
-                window.location.pathname = "shopEasy/home.html"
+                window.location.pathname = "shopEasy/pages/home.html"
             } else if (page == "shop") {
                 window.location.pathname = 'shopEasy/pages/shop.html'
             }
