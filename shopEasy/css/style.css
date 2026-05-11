@@ -176,7 +176,7 @@
 /* small device - smart phone - importent */
 @media screen and (min-width: 576px) {
    .container {
-      padding: 0px 40px;
+      margin: 0px 40px;
    }
 }
 
@@ -185,7 +185,7 @@
 /* from 992 - 1199 - laptop need */
 @media screen and (min-width: 992px) {
    .container {
-      padding: 0px 70px;
+      margin: 0px 70px;
    }
 }
 
