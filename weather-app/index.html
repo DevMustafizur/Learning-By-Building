@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>আবহাওয়া অ্যাপ</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<section id="weatherApp">
+  <div class="weatherContainer">
+
+    <!-- Search Section -->
+    <header class="searchSection">
+      <input type="text" class="searchInput" placeholder="শহরের নাম লিখুন...">
+      <button class="searchBtn">
+        <i class="fa-solid fa-magnifying-glass"></i> 
+      </button>
+    </header>
+<!-- খুঁজুন -->
+    <!-- Current Weather -->
+    <div class="currentWeather">
+      <div class="weatherIcon">
+        <i class="fa-solid fa-cloud-sun"></i>
+      </div>
+
+      <h2 class="temperature">২২°C</h2>
+      <h3 class="location">নিউ ইয়র্ক</h3>
+
+      <!-- Rain Chance -->
+      <p class="rainChance">🌧️ বৃষ্টির সম্ভাবনা: ৩০%</p>
+    </div>
+
+    <!-- Weather Details -->
+    <footer class="weatherDetails">
+
+      <!-- Humidity -->
+      <div class="detailCard">
+        <i class="fa-solid fa-droplet"></i>
+        <div class="humidityBox">
+          <h4>৬০%</h4>
+          <p>আর্দ্রতা</p>
+        </div>
+      </div>
+
+      <!-- Wind -->
+      <div class="detailCard">
+        <i class="fa-solid fa-wind"></i>
+        <div class="windBox">
+          <h4>১৫ কিমি/ঘণ্টা</h4>
+          <p>বাতাসের গতি</p>
+        </div>
+      </div>
+
+    </footer>
+
+  </div>
+</section>
+
+</body>
+</html>
