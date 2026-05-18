@@ -44,4 +44,6 @@ This project shows real-time weather information like temperature, humidity, win
 
 1. Clone the repository
 ```bash
-git clone 
+git clone git clone https://github.com/DevMustafizur/Learning-By-Building.git
+
+cd weacher-app
